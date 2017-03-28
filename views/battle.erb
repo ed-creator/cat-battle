@@ -1,0 +1,25 @@
+<body background="http://i.imgur.com/kAW6J.jpg">
+
+<div>
+  <center><h1>
+    <font color="white" face="Arial Black">Welcome to Cat Battle</font></h></center>
+  </div>
+<div>
+  <center>
+    <% if @name %>
+    <h3> Welcome <%= @name %></h>
+      <% end %>
+      <h3><font face="Arial Black" color="white">Player One</font></h>
+      <form action="/">
+        <input type="text" name="name">
+        <input type="submit" value="Start playing!">
+  </form>
+  <h3><font color="black" face="Arial Black">Player Two</font></h>
+  <form action="/">
+    <input type="text" name="name">
+    <input type="submit" value="Start playing!">
+  </form>
+</center>
+</div>
+
+</body>
