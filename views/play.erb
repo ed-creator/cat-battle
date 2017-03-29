@@ -1,7 +1,8 @@
  <%= @player_1_name %> vs. <%= @player_2_name %>
 
-<%= @player_1_name %>: 100HP
-<%= @player_2_name %>: 100HP
+<%= @player_1_name %>: <%= @player_1_hp %>HP
+<%= @player_2_name %>: <%= @player_2_hp %>HP
 
-<!--ALTERNATIVE TO FORM ACTION=, USES click_link instead of click_button -->
+<!--ALTERNATIVE TO FORM ACTION=, USES click_link instead of click_button
+Sends it to /attack, once you click bite. -->
 <a href="/attack">BITE!</a>
