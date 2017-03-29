@@ -1,19 +1,24 @@
 <body background="http://i.imgur.com/kAW6J.jpg">
 
+
+<!--WELCOME MESSAGE-->
 <div>
   <center><h1>
     <font color="white" face="Arial Black">Welcome to Cat Battle</font></h></center>
-  </div>
+</div>
+<!--WELCOME MESSAGE-->
 <div>
   <center>
     <% if @name %>
     <h3> Welcome <%= @name %></h>
       <% end %>
+<!--PLAYER 1: TITLE and NAME SUBMISSION-->
       <h3><font face="Arial Black" color="white">Player One</font></h>
       <form action="/">
         <input type="text" name="name">
         <input type="submit" value="Start playing!">
   </form>
+<!--PLAYER 2: TITLE and NAME SUBMISSION-->
   <h3><font color="black" face="Arial Black">Player Two</font></h>
   <form action="/">
     <input type="text" name="name">
