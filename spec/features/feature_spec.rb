@@ -27,4 +27,10 @@ feature 'Attack player 2' do
     click_link 'BITE!'
     expect(page).to have_content "Ed has used BITE!"
   end
+
+  scenario 'Player 2 loses 10 hp' do
+    sign_in_and_play
+    click_link 'BITE!'
+    expect(page).to have_content "Connie has 90 HP!"
+  end
 end

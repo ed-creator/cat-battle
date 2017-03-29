@@ -24,6 +24,7 @@ class Battle < Sinatra::Base
   # Extract the names from session to play, so we can play using the names submitted.
 
   get '/play' do
+    # @game = Game.new($player_1,$player_2)
     @player_1_name = $player_1.name
     @player_2_name = $player_2.name
     @player_1_hp = $player_1.hp
@@ -32,8 +33,9 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
-    @player_1_name = $player_1.name
-    @player_2_name = $player_2.name
+    @player_1 = $player_1
+    @player_2 = $player_2
+    Game.new.bite(@player_2)
     erb :attack
   end
 
